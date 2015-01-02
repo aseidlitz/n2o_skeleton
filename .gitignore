@@ -8,3 +8,4 @@ logs
 *.beam
 /deps/*
 deps
+erl_crash.dump
