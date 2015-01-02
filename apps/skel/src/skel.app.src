@@ -1,0 +1,13 @@
+{application, skel,
+ [
+  {description, "N2O app skeleton based on http://blog.crashdump.io/hello-n2o.html"},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+				  n2o
+                 ]},
+  {mod, { skel_app, []}},
+  {env, []}
+ ]}.
