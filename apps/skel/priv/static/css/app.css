@@ -1,0 +1,110 @@
+/* Skeleton style additions and overrides */
+
+/* custom button (tighter spacing) */
+  
+  .button.button-tight,
+  button.button-tight,
+  input[type="submit"].button-tight,
+  input[type="reset"].button-tight,
+  input[type="button"].button-tight {
+	    display: inline-block;
+	    height: 20px;
+		line-height: 20px;
+	    padding: 0 5px;
+	    color: #555;
+	    text-align: center;
+	    font-size: 11px;
+	    font-weight: 600;
+	    letter-spacing: .1rem;
+	    text-transform: uppercase; 
+	    text-decoration: none;
+	    white-space: nowrap;
+	    background-color: transparent;
+	    border-radius: 4px;
+	    border: 1px solid #bbb;
+	    cursor: pointer;
+	    box-sizing: border-box; }
+  .button.button-tight:hover,
+  button.button-tight:hover,
+  input[type="submit"].button-tight:hover,
+  input[type="reset"].button-tight:hover,
+  input[type="button"].button-tight:hover,
+  .button.button-tight:focus,
+  button.button-tight:focus,
+  input[type="submit"].button-tight:focus,
+  input[type="reset"].button-tight:focus,
+  input[type="button"].button-tight:focus {
+	  color: #333;
+	  border-color: #888;
+	  outline: 0; }
+	  
+.right { float: right; }
+	  
+.message { color: silver;}	  
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px
+}
+
+.alert-info {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1
+}
+
+.alert-info hr {
+    border-top-color: #a6e1ec
+}
+
+.alert-info .alert-link {
+    color: #245269
+}
+
+
+/* Leftovers */
+
+#new-todolist input {
+  width:300px;
+}
+
+ul.todo-list{
+  list-style: none;
+  margin:0px;
+}
+ul.todo-list li.list{
+  margin:0px 0px 20px 0px;
+  padding-right:14px;
+}
+ul.todo-list .delete{
+  width: 100%;
+}
+
+ul.tasks{
+  margin:10px 0px;
+  min-height: 10px;
+}
+ul.tasks li.task{
+  list-style:none;
+  margin-bottom : 2px;
+}
+ul.tasks li.task a{
+  text-decoration: none
+}
+ul.tasks li.task a.done{
+  text-decoration: line-through;
+
+}
+
+
+
+
+
+#new-task input{
+  height: 14px;
+  font-size: 12px;
+  line-height: 12px;
+  width: 220px;
+}

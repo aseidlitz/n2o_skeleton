@@ -1,0 +1,57 @@
+body, input, form {
+  font-family: Consolas, "Droid Sans Mono", Monaco, Courier, monospace;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin:0;
+  padding:0;
+}
+
+.container{
+  width:480px;
+}
+.title{
+  text-align:center;
+}
+
+#new-todolist input {
+  width:300px;
+}
+
+ul.todo-list{
+  list-style: none;
+  margin:0px;
+}
+ul.todo-list li.list{
+  margin:0px 0px 20px 0px;
+  padding-right:14px;
+}
+ul.todo-list .delete{
+  width: 100%;
+}
+
+ul.tasks{
+  margin:10px 0px;
+  min-height: 10px;
+}
+ul.tasks li.task{
+  list-style:none;
+  margin-bottom : 2px;
+}
+ul.tasks li.task a{
+  text-decoration: none
+}
+ul.tasks li.task a.done{
+  text-decoration: line-through;
+
+}
+
+
+
+
+
+#new-task input{
+  height: 14px;
+  font-size: 12px;
+  line-height: 12px;
+  width: 220px;
+}

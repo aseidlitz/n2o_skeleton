@@ -12,3 +12,6 @@ init(State, Ctx) ->
 		route_prefix(P) -> route(P).
 
 		route(_) -> index.     % always return `index` handler for any url.
+		%% to add more handlers create them in SRC folder and map routes to them here
+		%% route(<<"index">>)       -> index;
+		%% route(<<"login">>)       -> login;

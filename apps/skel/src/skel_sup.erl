@@ -23,12 +23,19 @@ start_link() ->
 %% ===================================================================
 
 init([]) ->
-	{ok, _} = cowboy:start_http(http, 3, [{port, 9001}],[{env, [{dispatch, rules()}]}]),	
+	{ok, _} = cowboy:start_http(http, 3, [{port, 9001}],[{env, [{dispatch, dispatch_rules()}]}]),	
     {ok, { {one_for_one, 5, 10}, []} }.
 
-rules() ->
-	cowboy_router:compile([
-	   {'_', [                  %% handle all domains
-	   	{'_', n2o_cowboy, []}   %% handle all urls
-	   ]}
-    ]).
+
+mime() -> [{mimetypes,cow_mimetypes,all}].
+
+dispatch_rules() ->
+    cowboy_router:compile(
+        [{'_', [	%% all domains
+            {"/static/[...]", n2o_dynalo, {dir, "apps/skel/priv/static", mime()}},
+            {"/n2o/[...]", n2o_dynalo, {dir, "deps/n2o/priv", mime()}},
+            {"/rest/:resource", rest_cowboy, []},
+            {"/rest/:resource/:id", rest_cowboy, []},
+            {"/ws/[...]", bullet_handler, [{handler, n2o_bullet}]},
+            {'_', n2o_cowboy, []}
+    ]}]).
