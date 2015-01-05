@@ -1,4 +1,4 @@
-erl -name skel@localhost ^
+erl -emu_args -name skel@localhost ^
 	-pa deps/cowboy/ebin ^
 	-pa deps/cowlib/ebin ^
 	-pa deps/erlydtl/ebin ^
