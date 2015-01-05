@@ -1,15 +1,27 @@
 /*
+<<<<<<< HEAD
 * Skeleton V2.0.2
+=======
+* Skeleton V2.0.4
+>>>>>>> dev
 * Copyright 2014, Dave Gamache
 * www.getskeleton.com
 * Free to use under the MIT license.
 * http://www.opensource.org/licenses/mit-license.php
+<<<<<<< HEAD
 * 12/15/2014
+=======
+* 12/29/2014
+>>>>>>> dev
 */
 
 
 /* Table of contents
+<<<<<<< HEAD
 –––––––––––––––––––––––––––––––––––––––––––––––––– 
+=======
+––––––––––––––––––––––––––––––––––––––––––––––––––
+>>>>>>> dev
 - Grid
 - Base Styles
 - Typography
@@ -29,6 +41,7 @@
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
+<<<<<<< HEAD
   position: relative; 
   width: 100%; 
   max-width: 960px; 
@@ -39,6 +52,18 @@
 .columns { 
   width: 100%; 
   float: left; 
+=======
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+.column,
+.columns {
+  width: 100%;
+  float: left;
+>>>>>>> dev
   box-sizing: border-box; }
 
 /* For devices larger than 400px */
@@ -55,10 +80,17 @@
   .column,
   .columns {
     margin-left: 4%; }
+<<<<<<< HEAD
   .column:first-child,        
   .columns:first-child { 
     margin-left: 0; }
   
+=======
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
+
+>>>>>>> dev
   .one.column,
   .one.columns                    { width: 4.66666666667%; }
   .two.columns                    { width: 13.3333333333%; }
@@ -116,10 +148,17 @@
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* NOTE
+<<<<<<< HEAD
 html is set to 62.5% so that all the REM measurements throughout Skeleton 
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html { 
   font-size: 62.5%; } 
+=======
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+html {
+  font-size: 62.5%; }
+>>>>>>> dev
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
@@ -130,7 +169,11 @@ body {
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+<<<<<<< HEAD
 h1, h2, h3, h4, h5, h6 { 
+=======
+h1, h2, h3, h4, h5, h6 {
+>>>>>>> dev
   margin-top: 0;
   margin-bottom: 2rem;
   font-weight: 300; }
@@ -157,6 +200,7 @@ p {
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+<<<<<<< HEAD
 a { 
   color: #1EAEDB; }
 a:hover { 
@@ -164,6 +208,15 @@ a:hover {
 
 
 /* Buttons 
+=======
+a {
+  color: #1EAEDB; }
+a:hover {
+  color: #0FA0CE; }
+
+
+/* Buttons
+>>>>>>> dev
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button,
 button,
@@ -179,7 +232,11 @@ input[type="button"] {
   font-weight: 600;
   line-height: 38px;
   letter-spacing: .1rem;
+<<<<<<< HEAD
   text-transform: uppercase; 
+=======
+  text-transform: uppercase;
+>>>>>>> dev
   text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
@@ -226,6 +283,10 @@ input[type="button"].button-primary:focus {
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 input[type="email"],
+<<<<<<< HEAD
+=======
+input[type="number"],
+>>>>>>> dev
 input[type="search"],
 input[type="text"],
 input[type="tel"],
@@ -240,8 +301,14 @@ select {
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box; }
+<<<<<<< HEAD
 /* Removes awkard default styles on some inputs for iOS */
 input[type="email"],
+=======
+/* Removes awkward default styles on some inputs for iOS */
+input[type="email"],
+input[type="number"],
+>>>>>>> dev
 input[type="search"],
 input[type="text"],
 input[type="tel"],
@@ -250,13 +317,21 @@ input[type="password"],
 textarea {
   -webkit-appearance: none;
      -moz-appearance: none;
+<<<<<<< HEAD
           appearance: none;
 }
+=======
+          appearance: none; }
+>>>>>>> dev
 textarea {
   min-height: 65px;
   padding-top: 6px;
   padding-bottom: 6px; }
 input[type="email"]:focus,
+<<<<<<< HEAD
+=======
+input[type="number"]:focus,
+>>>>>>> dev
 input[type="search"]:focus,
 input[type="text"]:focus,
 input[type="tel"]:focus,
@@ -285,18 +360,32 @@ label > .label-body {
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+<<<<<<< HEAD
 ul { 
   list-style: circle inside; }
 ol { 
+=======
+ul {
+  list-style: circle inside; }
+ol {
+>>>>>>> dev
   list-style: decimal inside; }
 ol, ul {
   padding-left: 0;
   margin-top: 0; }
+<<<<<<< HEAD
 ul ul, 
 ul ol,
 ol ol, 
 ol ul { 
   margin: 1.5rem 0 1.5rem 3rem; 
+=======
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+>>>>>>> dev
   font-size: 90%; }
 li {
   margin-bottom: 1rem; }
@@ -345,7 +434,10 @@ fieldset {
   margin-bottom: 1.5rem; }
 pre,
 blockquote,
+<<<<<<< HEAD
 form,
+=======
+>>>>>>> dev
 dl,
 figure,
 table,
@@ -354,8 +446,11 @@ ul,
 ol,
 form {
   margin-bottom: 2.5rem; }
+<<<<<<< HEAD
 p {
   margin-top: 0; }
+=======
+>>>>>>> dev
 
 
 /* Utilities
@@ -378,8 +473,13 @@ hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
+<<<<<<< HEAD
   border-top: 1px solid #E1E1E1;
 }
+=======
+  border-top: 1px solid #E1E1E1; }
+
+>>>>>>> dev
 
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -387,7 +487,11 @@ hr {
 /* Self Clearing Goodness */
 .container:after,
 .row:after,
+<<<<<<< HEAD
 .u-cf { 
+=======
+.u-cf {
+>>>>>>> dev
   content: "";
   display: table;
   clear: both; }
@@ -396,10 +500,17 @@ hr {
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
+<<<<<<< HEAD
 Note: The best way to structure the use of media queries is to create the queries 
 near the relevant code. For example, if you wanted to change the styles for buttons
 on small devices, paste the mobile query code up in the buttons section and style it 
 there. 
+=======
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+>>>>>>> dev
 */
 
 

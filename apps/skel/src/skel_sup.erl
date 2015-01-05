@@ -26,6 +26,8 @@ init([]) ->
 	{ok, _} = cowboy:start_http(http, 3, [{port, 9001}],[{env, [{dispatch, dispatch_rules()}]}]),	
     {ok, { {one_for_one, 5, 10}, []} }.
 
+%% http://ninenines.eu/docs/en/cowboy/1.0/guide/static_handlers/
+%% 
 
 mime() -> [{mimetypes,cow_mimetypes,all}].
 
@@ -39,3 +41,4 @@ dispatch_rules() ->
             {"/ws/[...]", bullet_handler, [{handler, n2o_bullet}]},
             {'_', n2o_cowboy, []}
     ]}]).
+
